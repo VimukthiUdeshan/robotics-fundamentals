@@ -11,35 +11,85 @@ This repository documents my progress in understanding how robots represent orie
 - Verify mathematical properties through numerical calculations.
 - Build a foundation for studying robot kinematics.
 
-## 🛠️ Tools
+## 🛠️ Tools & Technologies
 
-- **Python** for implementing exercises.
-- **NumPy** for matrix operations and numerical calculations.
-
-## 📚 Topics
-
-Each topic folder contains its own README with relevant theory, script explanations, and instructions for running the examples.
-
-| Topic | Focus |
+| Tool | Purpose |
 |---|---|
-| [Rotation Matrices](01-rotation-matrices/) | Representing rotations in 3D and checking orthogonality and preservation of handedness |
+| **Python** | Implementing mathematical concepts and exercises |
+| **NumPy** | Matrix operations, numerical calculations, and linear algebra |
+
+## 📁 Repository Structure
+
+The repository is organized into topic-based folders. Each folder contains its own README with relevant theory, explanations, and instructions for running the examples.
+
+```text
+Robotics-Fundamentals/
+│
+├── README.md
+├── requirements.txt
+│
+└── 01-rotation-matrices/
+    ├── README.md
+    └── Python exercise scripts
+```
+
+## 📚 Topics & Exercises
+
+Each topic introduces a specific mathematical concept used in robotics, supported by practical Python implementations.
+
+| Topic | Key Concepts | Status |
+|---|---|---|
+| [Rotation Matrices](01-rotation-matrices/) | 3D orientation representation, matrix operations, orthogonality, and preservation of handedness | Implemented |
 
 Additional topics will be added as my learning progresses.
 
 ## 🚀 Getting Started
 
-Install Python, download or clone this repository, and open a terminal in the repository’s root folder.
+### 1. Set up the environment
 
-Install the required dependencies:
+Install Python and clone or download this repository.
+
+### 2. Install dependencies
+
+Open a terminal in the repository's root directory and run:
 
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-Follow the instructions in each topic folder to run its examples.
+### 3. Explore the exercises
+
+Navigate to the relevant topic folder and follow its README for explanations and execution instructions.
+
+Run the Python scripts using:
+
+```bash
+python <script_name>.py
+```
+
+### 4. Verify NumPy installation
+
+You can check whether NumPy is installed by running:
+
+```bash
+python -c "import numpy; print(numpy.__version__)"
+```
+
+## 🧠 Suggested Learning Workflow
+
+For each topic, the exercises are intended to be explored in the following order:
+
+1. **Understand the theory** – Read the topic's README and review the mathematical concepts.
+2. **Explore the implementation** – Examine how the concepts are represented using Python and NumPy.
+3. **Run the examples** – Execute the scripts and observe the numerical outputs.
+4. **Experiment** – Modify values and test how the results change.
 
 ## 📝 Learning Notes
 
 These exercises are intended for learning and experimentation. Comments and explanations capture the reasoning behind the calculations, alongside the code itself.
 
 References and credits for examples adapted from lectures, textbooks, or tutorials are included in the relevant topic folders.
+
+---
+
+*This repository is a continuous learning project. New topics, implementations, and mathematical explorations will be added as I progress through robotics fundamentals.*
